@@ -23,8 +23,6 @@ The maximum of numbers to be removed. It can be a bit less than the number you c
 
 The sudoku grid will then appear with missing numbers as red question mark.
 
-´´´
-
 9 7 2 | 1 5 3 | 4 8 6
 6 1 4 | 8 2 7 | 9 3 5
 5 3 8 | 4 9 6 | 7 2 1
@@ -36,8 +34,10 @@ The sudoku grid will then appear with missing numbers as red question mark.
 1 6 7 | 5 3 9 | 8 4 2
 2 9 5 | ? 8 4 | 6 1 3
 8 ? 3 | 2 6 1 | 5 9 7
- 
-To retry the same one: ctrl + c and paste:
+
+
+´´´ 
+To retry the same sudoku grid: ctrl + c and paste:
 play(path="sudoku/sudoku_temporary.xls")
 
 which column? (btw 1 and 9)

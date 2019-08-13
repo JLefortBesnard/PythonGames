@@ -101,9 +101,8 @@ class board:
 
     def save_sudoku(self, saving_number):
         df = self.board
-        basedir =os.path.dirname("sudoku"")
-        if not os.path.exists(basedir):
-            os.makedirs(basedir)
+        if not os.path.exists("sudoku"):
+            os.makedirs("sudoku")
         existing_df_paths = glob.glob("sudoku/*")
         while os.path.exists("sudoku/sudoku_{}.xls".format(saving_number)) == True:
             saving_number += np.random.randint(10)

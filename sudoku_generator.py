@@ -103,7 +103,6 @@ class board:
         df = self.board
         if not os.path.exists("sudoku"):
             os.makedirs("sudoku")
-        existing_df_paths = glob.glob("sudoku/*")
         while os.path.exists("sudoku/sudoku_{}.xls".format(saving_number)) == True:
             saving_number += np.random.randint(10)
         df.to_excel("sudoku/sudoku_{}.xls".format(saving_number))
